@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">My First Demo</string>
+    <string name="practice">Practice</string>
+    <string name="assignment_1">Assignment 1</string>
+    <string name="log_cat">Log Cat</string>
+    <string name="toast">Toast</string>
+    <string name="your_bmi">Your BMI:</string>
+    <string name="you_are">You are</string>
+    <string name="click_on_calculate_bmi_to_find_your_bmi">Click on Calculate BMI to find your BMI</string>
+    <string name="inches">inches</string>
+    <string name="feet">feet</string>
+    <string name="calculate_bmi">Calculate BMI</string>
+    <string name="height">Height</string>
+    <string name="lb">lb</string>
+    <string name="your_weight_in_pounds">Your weight in pounds</string>
+    <string name="weight">Weight</string>
+    <string name="body_mass_index_bmi">Body Mass Index (BMI)</string>
 </resources>
