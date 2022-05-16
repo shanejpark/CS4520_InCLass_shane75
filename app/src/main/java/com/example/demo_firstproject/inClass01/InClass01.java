@@ -1,4 +1,4 @@
-package com.example.demo_firstproject;
+package com.example.demo_firstproject.inClass01;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +8,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.demo_firstproject.R;
 
 import java.text.DecimalFormat;
 

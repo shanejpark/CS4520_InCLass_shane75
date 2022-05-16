@@ -1,4 +1,4 @@
-package com.example.demo_firstproject;
+package com.example.demo_firstproject.practice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.demo_firstproject.R;
 
 public class Practice extends AppCompatActivity {
     private Button logCat, toast;
