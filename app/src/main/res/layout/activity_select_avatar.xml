@@ -6,4 +6,82 @@
     android:layout_height="match_parent"
     tools:context=".inClass02.SelectAvatar">
 
+    <ImageView
+        android:id="@+id/avatar_f_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_avatar_text"
+        app:srcCompat="@drawable/avatar_f_1" />
+
+    <ImageView
+        android:id="@+id/avatar_f_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_f_1"
+        app:srcCompat="@drawable/avatar_f_2" />
+
+    <ImageView
+        android:id="@+id/avatar_f_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:contentDescription="@string/todo"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_f_2"
+        app:srcCompat="@drawable/avatar_f_3" />
+
+    <ImageView
+        android:id="@+id/avatar_m_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_avatar_text"
+        app:srcCompat="@drawable/avatar_m_1"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/avatar_m_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_m_1"
+        app:srcCompat="@drawable/avatar_m_2"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/select_avatar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/select_your_avatar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/avatar_m_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_m_2"
+        app:srcCompat="@drawable/avatar_m_3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

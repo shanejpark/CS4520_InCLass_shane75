@@ -15,4 +15,24 @@
     <string name="your_weight_in_pounds">Your weight in pounds</string>
     <string name="weight">Weight</string>
     <string name="body_mass_index_bmi">Body Mass Index (BMI)</string>
+    <string name="angry">Angry</string>
+    <string name="sad">Sad</string>
+    <string name="happy">Happy</string>
+    <string name="awesome">Awesome</string>
+    <string name="edit_profile">Edit Profile Activity</string>
+    <string name="select_avatar">Select Avatar</string>
+    <string name="display_profile">Display Profile</string>
+    <string name="i_am">I am</string>
+    <string name="i_use">I use</string>
+    <string name="email">Email:</string>
+    <string name="todo">TODO</string>
+    <string name="name_input">Name:</string>
+    <string name="name">Name</string>
+    <string name="android">Android</string>
+    <string name="ios">iOS</string>
+    <string name="your_current_mood">Your current mood:</string>
+    <string name="submit">Submit</string>
+    <string name="e_mail">E-mail</string>
+    <string name="select_your_avatar">Select your avatar</string>
+    <string name="assignment_2">Assignment 2</string>
 </resources>

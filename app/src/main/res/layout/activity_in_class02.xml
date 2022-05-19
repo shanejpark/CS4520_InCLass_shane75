@@ -10,9 +10,12 @@
         android:id="@+id/name_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/name"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,18 +25,110 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="e-mail"
+        android:hint="@string/e_mail"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_input" />
+        app:layout_constraintTop_toBottomOf="@+id/name_input"
+        android:autofillHints="" />
 
     <ImageView
         android:id="@+id/avatar_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/select_avatar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_input"
-        tools:src="@tools:sample/avatars" />
+        tools:ignore="ImageContrastCheck"
+        tools:src="@drawable/select_avatar" />
+
+    <TextView
+        android:id="@+id/i_use_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/i_use"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_image" />
+
+    <RadioGroup
+        android:id="@+id/os_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/i_use_text">
+
+        <RadioButton
+            android:id="@+id/android_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/android" />
+
+        <RadioButton
+            android:id="@+id/ios_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ios" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/mood_seekbar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="330dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="10dp"
+        android:max="3"
+        android:progress="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mood_text" />
+
+    <TextView
+        android:id="@+id/mood_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/your_current_mood"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/os_radio_group" />
+
+    <ImageView
+        android:id="@+id/mood_emoji_image"
+        android:layout_width="64dp"
+        android:layout_height="35dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mood_seekbar"
+        app:layout_constraintTop_toBottomOf="@+id/mood_text"
+        app:srcCompat="@drawable/angry" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mood_seekbar" />
+
+    <TextView
+        android:id="@+id/current_mood_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/angry"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toEndOf="@+id/mood_text"
+        app:layout_constraintTop_toBottomOf="@+id/os_radio_group" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
