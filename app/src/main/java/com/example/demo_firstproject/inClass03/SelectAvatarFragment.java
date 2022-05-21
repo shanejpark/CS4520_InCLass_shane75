@@ -71,6 +71,8 @@ public class SelectAvatarFragment extends Fragment {
 
         ImageView f1, f2, f3, m1, m2, m3;
 
+        requireActivity().setTitle(R.string.select_avatar);
+
         f1 = view.findViewById(R.id.avatar_f_1);
         f2 = view.findViewById(R.id.avatar_f_2);
         f3 = view.findViewById(R.id.avatar_f_3);
@@ -79,15 +81,10 @@ public class SelectAvatarFragment extends Fragment {
         m3 = view.findViewById(R.id.avatar_m_3);
 
         f1.setOnClickListener(v -> sendData.fromFragment(R.drawable.avatar_f_1));
-
         f2.setOnClickListener(v -> sendData.fromFragment(R.drawable.avatar_f_2));
-
         f3.setOnClickListener(v -> sendData.fromFragment(R.drawable.avatar_f_3));
-
         m1.setOnClickListener(v -> sendData.fromFragment(R.drawable.avatar_m_1));
-
         m2.setOnClickListener(v -> sendData.fromFragment(R.drawable.avatar_m_2));
-
         m3.setOnClickListener(v -> sendData.fromFragment(R.drawable.avatar_m_3));
 
         return view;

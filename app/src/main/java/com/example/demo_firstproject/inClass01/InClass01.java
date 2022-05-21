@@ -27,6 +27,7 @@ public class InClass01 extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_in_class01);
+        setTitle("BMI Calculator");
 
         weightInput = findViewById(R.id.weight_input);
         footInput = findViewById(R.id.feet_input);

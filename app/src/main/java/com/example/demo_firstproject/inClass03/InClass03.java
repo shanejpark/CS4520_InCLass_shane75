@@ -3,6 +3,7 @@ package com.example.demo_firstproject.inClass03;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -89,10 +90,15 @@ public class InClass03 extends AppCompatActivity implements SelectAvatarFragment
             }
         });
 
-        avatar.setOnClickListener(v -> getSupportFragmentManager().beginTransaction()
-                .add(R.id.fragmentContainer, new SelectAvatarFragment())
-                .addToBackStack(null)
-                .commit()
+        avatar.setOnClickListener(v ->
+                {
+                    name.onEditorAction(EditorInfo.IME_ACTION_DONE);
+                    email.onEditorAction(EditorInfo.IME_ACTION_DONE);
+                    getSupportFragmentManager().beginTransaction()
+                            .add(R.id.fragmentContainer, new SelectAvatarFragment())
+                            .addToBackStack(null)
+                            .commit();
+                }
         );
 
         String regex = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
@@ -120,6 +126,9 @@ public class InClass03 extends AppCompatActivity implements SelectAvatarFragment
                                 moodID
                         );
 
+                        name.onEditorAction(EditorInfo.IME_ACTION_DONE);
+                        email.onEditorAction(EditorInfo.IME_ACTION_DONE);
+
                         getSupportFragmentManager().beginTransaction()
                                 .add(R.id.fragmentContainer,
                                         DisplayProfileFragment.newInstance(profile))
@@ -136,5 +145,6 @@ public class InClass03 extends AppCompatActivity implements SelectAvatarFragment
         avatarID = id;
         avatar.setImageResource(avatarID);
         getSupportFragmentManager().popBackStack();
+        setTitle(R.string.edit_profile);
     }
 }
