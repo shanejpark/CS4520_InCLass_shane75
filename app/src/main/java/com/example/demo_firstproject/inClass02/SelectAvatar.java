@@ -7,7 +7,6 @@ import com.example.demo_firstproject.R;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class SelectAvatar extends AppCompatActivity {
     ImageView f1, f2, f3, m1, m2, m3;

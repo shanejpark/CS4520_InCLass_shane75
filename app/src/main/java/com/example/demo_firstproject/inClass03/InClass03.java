@@ -1,14 +1,7 @@
-package com.example.demo_firstproject.inClass02;
+package com.example.demo_firstproject.inClass03;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.demo_firstproject.R;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,10 +11,14 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.demo_firstproject.R;
+import com.example.demo_firstproject.inClass02.Profile;
+
 import java.util.Objects;
 import java.util.regex.Pattern;
 
-public class InClass02 extends AppCompatActivity {
+public class InClass03 extends AppCompatActivity implements SelectAvatarFragment.IAvatar {
+
     EditText name, email;
     TextView currentMood;
     ImageView avatar, moodEmoji;
@@ -30,18 +27,6 @@ public class InClass02 extends AppCompatActivity {
     Button submit;
     String osText;
     int moodID, avatarID;
-
-    ActivityResultLauncher<Intent> startActivityForResult
-            = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
-        @Override
-        public void onActivityResult(ActivityResult result) {
-            if (result.getResultCode() == RESULT_OK) {
-                assert result.getData() != null;
-                avatarID = result.getData().getIntExtra("To InClass02", R.drawable.select_avatar);
-                avatar.setImageResource(avatarID);
-            }
-        }
-    });
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,10 +89,10 @@ public class InClass02 extends AppCompatActivity {
             }
         });
 
-        avatar.setOnClickListener(v -> {
-                    Intent intent = new Intent(InClass02.this, SelectAvatar.class);
-                    startActivityForResult.launch(intent);
-                }
+        avatar.setOnClickListener(v -> getSupportFragmentManager().beginTransaction()
+                .add(R.id.fragmentContainer, new SelectAvatarFragment())
+                .addToBackStack(null)
+                .commit()
         );
 
         String regex = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
@@ -135,12 +120,21 @@ public class InClass02 extends AppCompatActivity {
                                 moodID
                         );
 
-                        Intent intent = new Intent(InClass02.this, DisplayProfile.class);
-                        intent.putExtra("user_profile", profile);
-                        startActivity(intent);
+                        getSupportFragmentManager().beginTransaction()
+                                .add(R.id.fragmentContainer,
+                                        DisplayProfileFragment.newInstance(profile))
+                                .addToBackStack(null)
+                                .commit();
                     }
                 }
         );
+    }
 
+
+    @Override
+    public void fromFragment(int id) {
+        avatarID = id;
+        avatar.setImageResource(avatarID);
+        getSupportFragmentManager().popBackStack();
     }
 }

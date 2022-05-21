@@ -10,7 +10,7 @@ import com.example.demo_firstproject.inClass02.InClass02;
 import com.example.demo_firstproject.practice.Practice;
 
 public class MainActivity extends AppCompatActivity {
-    private Button practice, InClass01, InClass02;
+    private Button practice, InClass01, InClass02, InClass03;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +27,9 @@ public class MainActivity extends AppCompatActivity {
         InClass02 = findViewById(R.id.hw2);
         InClass02.setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, com.example.demo_firstproject.inClass02.InClass02.class)));
+
+        InClass03 = findViewById(R.id.hw3);
+        InClass03.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, com.example.demo_firstproject.inClass03.InClass03.class)));
     }
 }
