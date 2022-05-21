@@ -126,9 +126,6 @@ public class InClass03 extends AppCompatActivity implements SelectAvatarFragment
                                 moodID
                         );
 
-                        name.onEditorAction(EditorInfo.IME_ACTION_DONE);
-                        email.onEditorAction(EditorInfo.IME_ACTION_DONE);
-
                         getSupportFragmentManager().beginTransaction()
                                 .add(R.id.fragmentContainer,
                                         DisplayProfileFragment.newInstance(profile))
