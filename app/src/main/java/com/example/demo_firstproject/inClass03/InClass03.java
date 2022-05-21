@@ -95,7 +95,7 @@ public class InClass03 extends AppCompatActivity implements SelectAvatarFragment
                     name.onEditorAction(EditorInfo.IME_ACTION_DONE);
                     email.onEditorAction(EditorInfo.IME_ACTION_DONE);
                     getSupportFragmentManager().beginTransaction()
-                            .add(R.id.fragmentContainer, new SelectAvatarFragment())
+                            .add(R.id.fragmentContainer, SelectAvatarFragment.newInstance())
                             .addToBackStack(null)
                             .commit();
                 }
