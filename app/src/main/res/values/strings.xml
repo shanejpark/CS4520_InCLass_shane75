@@ -38,4 +38,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="assignment_3">Assignment 3</string>
+    <string name="select_complexity">Select Complexity</string>
+    <string name="_1_time">1 time</string>
+    <string name="minimum">Minimum:</string>
+    <string name="maximum">Maximum:</string>
+    <string name="average">Average:</string>
+    <string name="generate_number">Generate Number</string>
+    <string name="assignment_4">Assignment 4</string>
 </resources>
