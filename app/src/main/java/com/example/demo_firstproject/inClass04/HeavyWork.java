@@ -3,7 +3,6 @@ package com.example.demo_firstproject.inClass04;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.Collections;

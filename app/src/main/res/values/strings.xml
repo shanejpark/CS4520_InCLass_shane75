@@ -45,4 +45,7 @@
     <string name="average">Average:</string>
     <string name="generate_number">Generate Number</string>
     <string name="assignment_4">Assignment 4</string>
+    <string name="search_keyword">Search Keyword</string>
+    <string name="go">Go</string>
+    <string name="loading">Loading…</string>
 </resources>
