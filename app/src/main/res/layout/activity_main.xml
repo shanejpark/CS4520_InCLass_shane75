@@ -56,8 +56,17 @@
         android:id="@+id/hw5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Assignment 5"
+        android:text="@string/assignment_5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hw4" />
+
+    <Button
+        android:id="@+id/hw6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/assignment_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hw5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
