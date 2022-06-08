@@ -50,4 +50,6 @@
     <string name="loading">Loading…</string>
     <string name="assignment_5">Assignment 5</string>
     <string name="assignment_6">Assignment 6</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
 </resources>

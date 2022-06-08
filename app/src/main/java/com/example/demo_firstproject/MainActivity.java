@@ -10,7 +10,7 @@ import com.example.demo_firstproject.inClass02.InClass02;
 import com.example.demo_firstproject.practice.Practice;
 
 public class MainActivity extends AppCompatActivity {
-    private Button practice, InClass01, InClass02, InClass03, InClass04, InClass05, InClass06;
+    private Button practice, InClass01, InClass02, InClass03, InClass04, InClass05, InClass06, InClass07;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,5 +43,9 @@ public class MainActivity extends AppCompatActivity {
         InClass06 = findViewById(R.id.hw6);
         InClass06.setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, com.example.demo_firstproject.inClass06.InClass06.class)));
+
+        InClass07 = findViewById(R.id.hw7);
+        InClass07.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, com.example.demo_firstproject.inClass07.InClass07.class)));
     }
 }

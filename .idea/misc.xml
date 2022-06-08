@@ -12,15 +12,21 @@
         <entry key="app/src/main/res/layout/activity_in_class04.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_in_class05.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_in_class06.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_in_class07.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33890615269757707" />
         <entry key="app/src/main/res/layout/activity_practice.xml" value="0.17083333333333334" />
         <entry key="app/src/main/res/layout/activity_select_avatar.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_notes.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/fragment_start.xml" value="0.2543822146216332" />
         <entry key="app/src/main/res/layout/in_class_01.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/note_card.xml" value="0.4288537549407115" />
         <entry key="app/src/main/res/layout/practice.xml" value="0.29329477945963545" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

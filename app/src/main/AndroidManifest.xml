@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Demo_FirstProject"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".inClass07.InClass07"
+            android:exported="false" />
+        <activity
             android:name=".inClass06.InClass06"
             android:exported="false" />
         <activity

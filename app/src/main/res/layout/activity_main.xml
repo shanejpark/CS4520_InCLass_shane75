@@ -7,6 +7,15 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/hw7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignment 7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hw6" />
+
+    <Button
         android:id="@+id/hw4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
